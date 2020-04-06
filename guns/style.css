@@ -1,0 +1,338 @@
+body{
+    background: black;
+}
+
+.carousel-item{
+    background: black;
+    text-align: center;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+
+@media (min-width: 1201px){
+    .gnr{
+        width: 45%;
+        height: auto;
+    }
+
+    .carousel-caption{
+        font-family: 'Reenie Beanie', cursive;;
+        font-size: 150px;
+        
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .gnr{
+        width: 60%;
+        height: auto;
+    }
+    
+    .carousel-caption{
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 135px;
+        
+    }
+
+}
+
+@media(min-width: 480px) and (max-width: 767px){
+    .gnr{
+        width: 80%;
+        height: auto;
+    }
+    
+    .carousel-caption{
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 115px;
+        
+    }
+
+}
+
+@media(max-width: 479px){
+    .gnr{
+        width: 100%;
+        height: auto;
+    }
+    
+    .carousel-caption{
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 100px;
+        
+    }
+
+}
+
+.albums{
+    background-color: black;
+    
+}
+
+@media (min-width: 1201px){.afd{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 5%;
+}
+
+.uy1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding-bottom: 5%;
+}
+
+.uy2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.gnr-7{
+    width: 30%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.gnr-8{
+    width: 25%;
+    height: auto;
+    margin-right: 10%;
+}
+
+.gnr-9{
+    width: 25%;
+    height: auto;
+    margin-left: 10%;
+}
+}
+
+@media (min-width: 851px) and (max-width: 1200px){
+    .afd{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-bottom: 5%;
+    }
+    
+    .uy1{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        padding-bottom: 5%;
+    }
+    
+    .uy2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .gnr-7{
+        width: 50%;
+        height: auto;
+        margin-left: 10%;
+    }
+    
+    .gnr-8{
+        width: 45%;
+        height: auto;
+        margin-right: 10%;
+    }
+    
+    .gnr-9{
+        width: 45%;
+        height: auto;
+        margin-left: 10%;
+    }
+
+
+
+}
+
+@media(min-width: 480px) and (max-width: 850px){
+    .afd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .uy1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .uy2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gnr-7{
+        width: 70%;
+        height: auto;
+    }
+    
+    .gnr-8{
+        width: 60%;
+        height: auto;
+    }
+    
+    .gnr-9{
+        width: 60%;
+        height: auto;
+    }
+
+}
+
+@media(max-width: 479px){
+    .afd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .uy1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .uy2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gnr-7{
+        width: 70%;
+        height: auto;
+    }
+    
+    .gnr-8{
+        width: 70%;
+        height: auto;
+    }
+    
+    .gnr-9{
+        width: 70%;
+        height: auto;
+    }
+
+    .ttt{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1201px){
+.video{display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.vc1{
+    width: 25%;
+    height: 28vh;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+}
+
+@media (min-width: 851px) and (max-width: 1200px){
+    .video{display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .vc1{
+        width: 50vw;
+        height: 25vh;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 850px){
+    .video{display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vc1{
+        width: 80%;
+        height: 30vh;
+        padding-bottom: 3%;
+    }
+
+}
+
+@media(min-width: 479px){
+    .anim{display: none;
+
+    }
+}
+
+.bnt{
+    color: wheat;
+    font-family:  'Reenie Beanie', cursive;
+}
+
+.bnt:hover{
+    color: red;
+}
+
+.bnt:active{
+    color: red;
+}
+
+.tttt{
+    padding: 2%;
+}
+
+.bnt1{
+    color: wheat;
+    font-family:  'Reenie Beanie', cursive;
+}
+
+.bnt1:hover{
+    color: red;
+}
+
+.bnt1:active{
+    color: red;
+}
+
+.tttt1{
+    padding: 2%;
+}
+
+.bnt2{
+    color: wheat;
+    font-family:  'Reenie Beanie', cursive;
+}
+
+.bnt2:hover{
+    color: red;
+}
+
+.bnt2:active{
+    color: red;
+}
+
+.tttt2{
+    padding: 2%;
+}
+
+
+
+
