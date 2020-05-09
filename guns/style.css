@@ -96,60 +96,63 @@ h1{
 }
 
 .gnr-7{
-    width: 30%;
+    max-width: 40%;
     height: auto;
     margin-left: 10%;
 }
 
 .gnr-8{
-    width: 25%;
+    max-width: 35%;
     height: auto;
     margin-right: 10%;
 }
 
 .gnr-9{
-    width: 25%;
+    max-width: 35%;
     height: auto;
     margin-left: 10%;
 }
 }
 
-@media (min-width: 851px) and (max-width: 1200px){
+@media (min-width: 1001px) and (max-width: 1200px){
     .afd{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         padding-bottom: 5%;
     }
     
     .uy1{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         padding-bottom: 5%;
     }
     
     .uy2{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
     }
 
     .gnr-7{
         width: 50%;
-        height: auto;
+        height: 50%;
         margin-left: 10%;
     }
     
     .gnr-8{
         width: 45%;
-        height: auto;
+        height: 45%;
         margin-right: 10%;
     }
     
     .gnr-9{
         width: 45%;
-        height: auto;
+        height: 45%;
         margin-left: 10%;
     }
 
@@ -157,7 +160,9 @@ h1{
 
 }
 
-@media(min-width: 480px) and (max-width: 850px){
+
+
+@media(min-width: 480px) and (max-width: 1000px){
     .afd{
         display: flex;
         flex-direction: column;
@@ -243,6 +248,15 @@ h1{
     height: 28vh;
     padding-left: 1%;
     padding-right: 1%;
+    order: 0;
+}
+
+.vc2{
+    width: 25%;
+    height: 28vh;
+    padding-left: 1%;
+    padding-right: 1%;
+    order: 0;                /* элементы отобразятся по порядку, заданному в html-коде */
 }
 
 }
@@ -250,15 +264,26 @@ h1{
 @media (min-width: 851px) and (max-width: 1200px){
     .video{display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-wrap: wrap;     /* свойства "flex-direction" и "flex-wrap" можно объеденить в одно: "flex-flow" */
+        /* == flex-flow: row wrap */
     }
     .vc1{
-        width: 50vw;
-        height: 25vh;
+        width: 40vw;
+        height: 20vh;
         padding-left: 1%;
         padding-right: 1%;
         padding-bottom: 2%;
+        order: 0;
+    }
+
+    .vc2{
+        width: 40vw;
+        height: 20vh;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        order: 1;                        /* cначала отобразятся элементы с меньшим значением, а затем с большим (порядок: 1..3..4..2) */
     }
 }
 
@@ -272,6 +297,14 @@ h1{
         width: 80%;
         height: 30vh;
         padding-bottom: 3%;
+        order: 1;
+    }
+
+    .vc2{
+        width: 80%;
+        height: 30vh;
+        padding-bottom: 3%;
+        order: 0;
     }
 
 }
